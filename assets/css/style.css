@@ -1,0 +1,427 @@
+html {
+    scroll-behavior: smooth;
+  }
+/* PRELOADER */
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #EFC518;
+    border-radius: 50%;
+    border-top: 16px solid #091213;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+  }
+
+/* NAVBAR */
+a.navbar-brand{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #EFC518 !important;
+}
+a.nav-link{
+    font-family: Lato;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.75px;
+    color: #FEFCF3 !important;
+}
+a.nav-link:hover{
+    color:#ccc !important;
+}
+.bg-color{
+    background: #091213;
+}
+
+/* HERO CONTAINER */
+.hero-container{
+    background: #091213;
+}
+.hero-text{
+    width: 36%;
+}
+.hero-box{
+    border-top: 1px solid #EFC518;
+    border-bottom: 1px solid #EFC518;
+}
+.hero-text p:first-child{
+    font-family: Lato;
+    font-style: normal; 
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #FEFCF3;
+}
+.hero-text h3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FEFCF3;
+    
+}
+.hero-text p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    color: #FEFCF3;
+}
+.hero-text p:last-child{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #FEFCF3;
+    opacity: 0.5;
+}
+/* BUTTONS */
+input.btn-yellow,a.btn-yellow{
+    color: black;
+    background: #EFC518;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration:none;
+}
+input.btn-yellow:hover,a.btn-yellow:hover{
+    background: #ccae38;
+    color:black;
+    text-decoration:none;
+}
+input.btn-yellow {
+    outline: none;
+    border: none;
+}
+
+/* PORTFOLIO */
+div#portfolio{
+    background: #091213;
+}
+#portfolio p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    color: #FEFCF3;
+}
+#portfolio h3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #FEFCF3;
+    opacity: 0.5;
+}
+.embed-responsive.right-video.embed-responsive-16by9 {
+    height: 630px;
+}
+#portfolio img {
+    display: none;
+  }
+
+#portfolio img:hover{
+    display: block;
+    padding: inherit;
+    z-index: 1;
+    transition: transform .2s;
+    -ms-transform: scale(1.25); /* IE 9 */
+  -webkit-transform: scale(1.25); /* Safari 3-8 */
+  transform: scale(1.25);
+}
+#portfolio .embed-responsive {
+    display: none;
+}
+
+/* NOTABLE BRANDS */
+.brands, .glider-contain{
+    background: #091213 !important;
+}
+.brands p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    color: #FEFCF3;
+}
+.brands h3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #FEFCF3;
+    opacity: 0.5;
+}
+img.glider-slide {
+    height: fit-content !important;
+}
+/* ABOUT ME */
+div#about{
+    background: #091213;
+}
+#about p.title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    color: #FEFCF3;
+}
+#about h3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #FEFCF3;
+    opacity: 0.5;
+}
+p.about-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    width:230px;
+    line-height: 24px;
+    letter-spacing: 0.44px;
+    color: #FEFCF3;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-box{
+    padding: 70px 50px;
+    border: 1px solid #EFC518;
+    border-left: none;
+}
+
+/* CONTACT */
+div#contact{
+    background: #091213;
+}
+#contact p.title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    color: #FEFCF3;
+}
+#contact h3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #FEFCF3;
+    opacity: 0.5;
+}
+p.question{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    color: #FEFCF3;
+}
+.contact-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #FEFCF3;
+    opacity: 0.5;
+}
+.contact-content{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    color: #FEFCF3;
+}
+#contact input::placeholder {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FEFCF3;
+    opacity: 0.6;
+}
+#contact input.form-control, #contact textarea{
+    background: #1F2233;
+    border: none;
+    border-radius: 8px;
+}
+/* FOOTER */
+footer{
+    background: #EFC518;
+}
+footer p{
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 2px;
+color: #091213;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width:780px){
+    .hero-text {
+        width: 100%;
+    }
+    .hero-text p:first-child{
+        font-size: 16px;
+    }
+    .hero-text h3{
+        font-size: 38px;
+        
+    }
+    .hero-text p{
+        font-size: 20px;
+    }
+    .hero-text p:last-child{
+        font-size: 13px;
+    }
+    #portfolio p{
+    font-size: 30px;
+    line-height: 20px;
+    }
+    .about-box{
+        padding: 70px 50px;
+        border-top: none;
+        border-left: 1px solid #EFC518;
+    }
+    #contact p.title{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: 0.25px;
+        color: #FEFCF3;
+    }
+    #contact h3{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        color: #FEFCF3;
+        opacity: 0.5;
+    }
+    p.question{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 0px;
+        letter-spacing: 0.25px;
+        color: #FEFCF3;
+    }
+    .contact-text{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        color: #FEFCF3;
+        opacity: 0.5;
+    }
+    .contact-content{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 41px;
+        letter-spacing: 0.25px;
+        color: #FEFCF3;
+    }
+    #about p.title{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 41px;
+        letter-spacing: 0.25px;
+        color: #FEFCF3;
+    }
+}
