@@ -52,8 +52,10 @@ html {
   #myDiv {
     display: none;
   }
-  
-  .wave{ -webkit-animation-duration: 1800ms;
+
+  /* Waving */
+.wave{ 
+    -webkit-animation-duration: 1800ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-name: dancing-dots-jump;
     -moz-animation-duration: 1800ms;
@@ -80,6 +82,36 @@ html {
     95% { top: 1px; }
     100% { top: 0; }
   }
+/* Smiling */
+.smile{ 
+    -webkit-animation-duration: 1800ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: smiling;
+    -moz-animation-duration: 1800ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: smiling;
+    padding: 1px;
+    position: relative;
+}     
+@-webkit-keyframes smiling {
+    0% { top: 0; }
+    55% { top: 0; }
+    60% { top: -10px; }
+    80% { top: 3px; }
+    90% { top: -2px; }
+    95% { top: 1px; }
+    100% { top: 0; }
+  }
+  @-moz-keyframes smiling {
+    0% { top: 0; }
+    55% { top: 0; }
+    60% { top: -10px; }
+    80% { top: 3px; }
+    90% { top: -2px; }
+    95% { top: 1px; }
+    100% { top: 0; }
+  }
+
 
 /* NAVBAR */
 a.navbar-brand{
