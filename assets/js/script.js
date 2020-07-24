@@ -10,6 +10,24 @@ new Glider(document.querySelector('.glider'), {
     }
   })
   
+  //FOR BURGER NAVIGATION
+$(document).ready(function(){
+  $('.burger').on('click', function(){
+      $('body').toggleClass("open")
+  })
+})
+$(document).ready(function(){
+  $('.burger').on('click', function(){
+      $('.links').toggleClass("open")
+  })
+})
+$(document).ready(function(){
+  $('.burger').on('click', function(){
+      $(this).toggleClass("open")
+  })
+})
+
+
   // Initialize AOS
   AOS.init({
     duration: 1200,
