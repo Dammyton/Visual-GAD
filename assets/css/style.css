@@ -52,7 +52,9 @@ html {
   #myDiv {
     display: none;
   }
-
+iframe{
+    overflow:hidden !important;
+}
   /* Waving */
 .wave{ 
     -webkit-animation-duration: 1800ms;
