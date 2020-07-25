@@ -341,11 +341,12 @@ div#portfolio{
 #portfolio img:hover{
     display: block;
     padding: inherit;
+    height:min-content;
     z-index: 1;
     transition: transform .2s;
-    -ms-transform: scale(1.25); /* IE 9 */
-  -webkit-transform: scale(1.25); /* Safari 3-8 */
-  transform: scale(1.25);
+    -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1);
 }
 #portfolio .embed-responsive {
     display: none;
